@@ -1,6 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,700|Roboto+Condensed:400,700');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+$open-sans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto Condensed', sans-serif;
+
 body {
-  font-family: sans-serif;
-  line-height: 1.7;
+  font-family: $open-sans;
+  font-size: 1.6rem;
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  line-height: 3rem;
+}
+
+.primary {
+  color: #474747;
+  font-family: $montserrat;
+  font-size: 4.8rem;
+  font-weight: 500;
+  letter-spacing: -1.19px;
+  line-height: 5.7rem;
+}
+
+.secondary {
+  color: #494949;
+  font-family: $montserrat;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.tertiary {
+  font-family: $montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.82px;
 }

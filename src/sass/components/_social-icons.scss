@@ -1,0 +1,22 @@
+.social-icons {
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 1.3rem;
+
+    & i {
+      font-size: 2.3rem;
+      color: #191919;
+      transition: .2s;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+}
