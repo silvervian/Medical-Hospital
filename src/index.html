@@ -11,10 +11,21 @@
 
 <body>
 
+  <div class="menu-mobile">
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Home</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">About</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Services</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Gallery</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Blog</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Contac us</a></li>
+    </ul>
+  </div>
+
   <header class="header">
 
     <div class="header-top">
-      <a href="#" class="logo"><img class="logo" src="img/logo.png" alt="logo"></a>
+      <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
 
       <div class="header-info-box">
         <div class="header-info">
@@ -50,6 +61,9 @@
     <span class="space-between-header"></span>
 
     <div class="header-bottom">
+
+
+
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
@@ -73,7 +87,14 @@
           <li class="social-icons__item"><a href="#" class="social-icons__link"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
       </div>
+      <div class="hamburger">
+        <input class="hamburger__checkbox" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+
 
   </header>
 
@@ -87,8 +108,44 @@
       </div>
       <button class="btn">Read more</button>
     </div>
-
   </section> <!-- /.hero -->
+
+  <section class="about">
+
+    <div class="about__inner about__inner--1">
+      <div class="about__logo">
+        <img class="about__svg" src="./img/plug.svg" alt="plug">
+      </div>
+      <h3 class="tertiary tertiary--light about__header">Best Treatment</h3>
+      <span class="about__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium.</span>
+    </div>
+    <div class="about__inner about__inner--2">
+      <div class="about__logo">
+        <img class="about__svg" src="./img/phone.svg" alt="phone">
+      </div>
+      <h3 class="tertiary tertiary--light about__header">Emergency Help</h3>
+      <span class="about__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium.</span>
+    </div>
+    <div class="about__inner about__inner--3">
+      <div class="about__logo">
+        <img class="about__svg" src="./img/lady.svg" alt="ladygaga">
+      </div>
+      <h3 class="tertiary tertiary--light about__header">Medical Staff</h3>
+      <span class="about__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium.</span>
+    </div>
+    <div class="about__inner about__inner--4">
+      <div class="about__logo">
+        <img class="about__svg" src="./img/carret.svg" alt="carret">
+      </div>
+      <h3 class="tertiary tertiary--light about__header">Qualified Doctors</h3>
+      <span class="about__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium.</span>
+    </div>
+
+  </section> <!-- /.about -->
 
 
   <script src="./js/app.js"></script>

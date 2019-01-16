@@ -1,5 +1,13 @@
 .social-icons {
 
+  @include media(large) {
+    margin-left: 8rem;
+  }
+
+  @include media(small) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     list-style: none;

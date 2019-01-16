@@ -1,5 +1,9 @@
 .nav {
 
+  @include media(large) {
+    display: none;
+  }
+
   &__list {
     margin: 3rem 0;
     list-style: none;
@@ -10,7 +14,6 @@
     display: flex;
     justify-content: center;
     width: 12rem;
-    // padding: 0 1rem;
   }
 
   &__link {

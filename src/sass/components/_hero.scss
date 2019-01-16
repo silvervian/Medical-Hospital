@@ -4,21 +4,33 @@
   background: url(../../img/Layer_10@2x.jpg) no-repeat 50% 50% / cover;
   display: flex;
   align-items: center;
+  
+  @include media(large) {
+    background: url(../../img/Layer_10@2x.jpg) no-repeat 50% 50% / cover;
+    justify-content: center;
+
+  }
 
   &__inner {
     margin-left: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    @include media(large) {
+      margin-left: 0;
+    }
   }
 
   &__header {
+    margin: 0 1rem;
     max-width: 55.4rem;
     text-align: center;
   }
 
   &__desc {
-    margin: 4rem 0;
+    text-align: center;
+    margin: 4rem 1rem;
     max-width: 42rem;
   }
 }

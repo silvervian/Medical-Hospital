@@ -33,4 +33,9 @@ body {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -1.82px;
+  line-height: 4rem;
+
+  &--light {
+    color: #ffffff;
+  }
 }
