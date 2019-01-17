@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -11,6 +12,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -22,5 +27,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    /* Use the ProvidePlugin constructor to inject jquery implicit globals */
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': "jquery'",
+      'window.$': 'jquery'
+    })
+  ],
   mode: 'production'
 };

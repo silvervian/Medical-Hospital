@@ -1,0 +1,60 @@
+#accordion {
+  margin: 0 auto;
+  width: 100%;
+  
+  @include media(wide) {
+    width: 80%;
+  }
+  
+  @include media(large) {
+    width: 100%;
+  }
+
+  & .ui-icon {
+    background: url(../../img/arrow.png) no-repeat 50% 50%;
+    top: 2px;
+    left: -10px;
+  }
+
+  & .ui-icon-triangle-1-s {
+    background: url(../../img/arro-down.png) no-repeat 50% 50%;
+  }
+
+  & .ui-state-default {
+    border: none;
+    background: #e2e2e2;
+  }
+
+  & .ui-state-active {
+    background: #0087be;
+  }
+
+  & .ui-accordion-header-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  
+  
+  & .ui-accordion-header {
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 8rem;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  & .ui-accordion-content {
+    padding: 1rem 0;
+    color: #6a6a6a;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+
+}
+
+

@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 1rem;
+  background: url(../../img/gallery-bg.png) no-repeat 50% 50% / cover, #38b69e;
+
+  > * {
+    margin: 1rem 0;
+  }
+
+  &__desc {
+    text-align: center;
+    max-width: 110rem;
+    color: #ffffff;
+  }
+}

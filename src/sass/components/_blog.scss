@@ -1,0 +1,98 @@
+.blog-wrapper {
+  padding: 9rem 0;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+
+  > * {
+    margin: 1rem 0;
+  }
+
+  @include media(wide) {
+    flex-wrap: wrap;
+  }
+}
+
+.blog {
+  flex: 1 1 75%;
+
+  > * {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__desc {
+    color: #6a6a6a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+}
+
+.blog-entry-wrapper {
+  display: flex;
+
+  @include media(medium) {
+    flex-direction: column;
+  }
+}
+
+.blog-entry {
+  padding: .5rem;
+  flex: 1 1 50%;
+
+  > * {
+    margin: 1rem 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    color: #6f6f6e;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 500;
+    /* Text style for "L, orem ip" */
+    letter-spacing: -1.21px;
+  }
+
+  &__info {
+    color: #0087be;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* Text style for "April 19," */
+    letter-spacing: -0.38px;
+  }
+
+  &__desc {
+    color: #6f6f6e;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 500;
+    /* Text style for "L, orem ip" */
+    letter-spacing: -1.21px;
+  }
+}
+
+
+.blog-sidebar {
+  margin-left: 3rem;
+  flex: 1 1 30%;
+
+  @include media(medium) {
+    margin-left: 0;
+  }
+  
+  &__desc {
+    margin: 2rem 0;
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 1.6rem;
+  }
+}

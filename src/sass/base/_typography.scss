@@ -32,6 +32,10 @@ body {
   font-weight: 700;
   line-height: 5.5rem;
   text-align: center;
+
+  &--light {
+    color: #ffffff;
+  }
   
   @include media(small) {
     font-size: 3.5rem;
