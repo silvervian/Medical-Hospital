@@ -42,9 +42,19 @@
 .header-info-box {
   margin: 3rem 0 3rem;
   display: flex;
-
+  
   @include media(large) {
     display: none;
+  }
+  
+  &--mobile {
+    display: block;
+    margin: 0;
+    margin-bottom: 3rem;
+    
+    > * {
+      margin-top: 1rem;
+    }
   }
 }
 

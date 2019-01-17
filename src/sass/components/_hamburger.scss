@@ -55,7 +55,7 @@
 }
 
 .menu-mobile {
-  margin-top: 11rem;
+  margin-top: 10rem;
   position: fixed;
   display: flex;
   top: 0;
@@ -101,4 +101,9 @@
       transform: translateX(0px);
       opacity: 1;
   }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

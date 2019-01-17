@@ -1,63 +1,75 @@
 .about {
+  padding: 8rem 1rem 3rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  &__desc {
+    padding: 3rem 0;
+    text-align: center;
+    max-width: 87.8rem;
+  }
 
   &__inner {
-    padding: 6rem 1rem;
+    background: url(../../img/doktor_quin.png) no-repeat center bottom;
+    height: 60rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1 1 25%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
     
     @include media(large) {
-      flex: 1 1 50%;
-      // padding: 6rem 4rem;
-    }
-    
-    @include media(small) {
-      // padding: 6rem 3rem;
-      flex: 1 1 100%;
-    }
-
-    > * {
-      margin: 1rem 0;
-    }
-
-    &--1 {
-      background: #43b1d2;
-    }
-    
-    &--2 {
-      background: #3fb6c6;
-    }
-    
-    &--3 {
-      background: #3cbbbb;
-    }
-    
-    &--4 {
-      background: #37c3a8;
+      height: auto;
+      background: none;
+      flex-wrap: nowrap;
     }
   }
+  
+  
+}
 
-  &__header {
-    text-align: center;
+.about-info {
+  margin-top: 2rem;
+  max-width: 36rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  @include media(large) {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
-  &__logo {
+  @include media(small) {
+
+  }
+
+  &__icon {
+    margin: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #1a9bdc;
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background-color: #ffffff;
   }
-  
+
+  &__header {
+    flex: 2 1 50%;
+  }
 
   &__desc {
-    max-width: 30rem;
-    text-align: center;
-    color: #ffffff;
+    text-align: justify;
+    max-width: 36.3rem;
+
+    @include media(large) {
+      max-width: 40rem;
+      flex: 1 1 100%;
+    }
   }
 }
+
