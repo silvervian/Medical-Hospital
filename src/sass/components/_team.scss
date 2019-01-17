@@ -1,0 +1,59 @@
+.team {
+  padding: 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__desc {
+    margin: 3rem 0;
+    max-width: 101rem;
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
+
+.member {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > * {
+    margin: 1rem 0;
+  }
+
+  &__img {
+    width: 279px;
+    height: 279px;
+    border-radius: 50%;
+  } 
+  
+  &__name {
+    color: #6f6f6e;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  &__rank {
+    color: #6f6f6e;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    /* Text style for "A, ssistan" */
+    letter-spacing: -1.09px;
+  }
+  
+  &__social i {
+    font-size: 25px;
+    color: #0087be;
+  }
+  
+}

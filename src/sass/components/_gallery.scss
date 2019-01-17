@@ -14,4 +14,31 @@
     max-width: 110rem;
     color: #ffffff;
   }
+
+  &__inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30rem, 40rem));
+    grid-auto-rows: 21rem;
+    grid-gap: 2rem;
+    justify-content: center;
+    
+    @include media(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include media(small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
