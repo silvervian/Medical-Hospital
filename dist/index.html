@@ -13,10 +13,10 @@
 
   <div class="menu-mobile">
     <ul class="menu-mobile__list">
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Home</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">services</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Services</a></li>
-      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Gallery</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#header">Home</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#about">About</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#services">Services</a></li>
+      <li class="menu-mobile__link"><a class="menu-mobile__link" href="#gallery">Gallery</a></li>
       <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Blog</a></li>
       <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">Contac us</a></li>
     </ul>
@@ -32,28 +32,32 @@
         </div>
       </div>
       <div class="header-info">
-        <div class="header-info__img">
-          <i class="fas fa-envelope"></i>
-        </div>
+        <a href="mailto:dr.lecter@hannibal.com?subject=ZjemCie">
+          <div class="header-info__img">
+            <i class="fas fa-envelope"></i>
+          </div>
+        </a>
         <div class="header-info__desc">
           <span class="header-info__title">MAIL US</span>
-          <span class="header-info__text">free@psdfreebies.com</span>
+          <span class="header-info__text"><a href="mailto:free@psdfreebies.com">dr.lecter@hannibal.com</a></span>
         </div>
       </div>
       <div class="header-info">
-        <div class="header-info__img">
-          <i class="fas fa-comment-dots"></i>
-        </div>
+        <a href="tel:+123 4567 8900">
+          <div class="header-info__img">
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </a>
         <div class="header-info__desc">
           <span class="header-info__title">CALL US</span>
-          <span class="header-info__text">+123 4567 8900</span>
+          <span class="header-info__text"><a href="tel:+123 4567 8900">+123 4567 8900</a></span>
         </div>
       </div>
     </div>
 
   </div>
 
-  <header class="header">
+  <header id="header" class="header">
 
     <div class="header-top">
       <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
@@ -69,21 +73,25 @@
           </div>
         </div>
         <div class="header-info">
-          <div class="header-info__img">
-            <i class="fas fa-envelope"></i>
-          </div>
+          <a href="mailto:dr.lecter@hannibal.com?subject=ZjemCie">
+            <div class="header-info__img">
+              <i class="fas fa-envelope"></i>
+            </div>
+          </a>
           <div class="header-info__desc">
             <span class="header-info__title">MAIL US</span>
-            <span class="header-info__text">free@psdfreebies.com</span>
+            <span class="header-info__text"><a href="mailto:dr.lecter@hannibal.com?subject=ZjemCie">dr.lecter@hannibal.com</a></span>
           </div>
         </div>
         <div class="header-info">
-          <div class="header-info__img">
-            <i class="fas fa-comment-dots"></i>
-          </div>
+          <a href="tel:+123 4567 8900">
+            <div class="header-info__img">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </a>
           <div class="header-info__desc">
             <span class="header-info__title">CALL US</span>
-            <span class="header-info__text">+123 4567 8900</span>
+            <span class="header-info__text"><a href="tel:+123 4567 8900">+123 4567 8900</a></span>
           </div>
         </div>
       </div>
@@ -97,12 +105,12 @@
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#header" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contac us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
         </ul>
       </nav>
 
@@ -199,7 +207,7 @@
 
   </section> <!-- .services -->
 
-  <section class="about">
+  <section id="about" class="about">
     <h2 class="secondary">Why Choose Us ?</h2>
     <div class="about__desc">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -283,7 +291,7 @@
 
   </section> <!-- .features -->
 
-  <div class="blog-wrapper">
+  <div id="services" class="blog-wrapper">
     <section class="blog">
       <h2 class="secondary blog__title">How we works</h2>
       <div class="blog__desc">
@@ -294,8 +302,10 @@
       <div class="blog-entry-wrapper">
 
         <div class="blog-entry">
-          <img src="img/blog-1.jpg" alt="" class="blog-entry__img">
-          <h4 class="blog-entry__title">Lorem ipsum dolor sit amet, </h4>
+          <a href="#"><img src="img/blog-1.jpg" alt="" class="blog-entry__img"></a>
+          <a href="">
+            <h4 class="blog-entry__title">Lorem ipsum dolor sit amet, </h4>
+          </a>
           <span class="blog-entry__info">April 19, 2017 | Dr. Jon Doe</span>
           <div class="blog-entry__desc">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -303,8 +313,10 @@
           <button class="btn">Read more</button>
         </div>
         <div class="blog-entry">
-          <img src="img/blog-2.jpg" alt="" class="blog-entry__img">
-          <h4 class="blog-entry__title">Lorem ipsum dolor sit amet, </h4>
+          <a href="#"><img src="img/blog-2.jpg" alt="" class="blog-entry__img"></a>
+          <a href="">
+            <h4 class="blog-entry__title">Lorem ipsum dolor sit amet, </h4>
+          </a>
           <span class="blog-entry__info">April 19, 2017 | Dr. Jon Doe</span>
           <div class="blog-entry__desc">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -316,7 +328,7 @@
 
     </section>
     <aside class="blog-sidebar">
-      <h2 class="secondary">Our creative</h2>
+      <h2 class="secondary">Our Services</h2>
       <div class="blog-sidebar__desc">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
         doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -356,7 +368,7 @@
   </div> <!-- .blog-wrapper -->
 
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <h2 class="secondary secondary--light">Gallery</h2>
     <div class="gallery__desc">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -394,43 +406,43 @@
     <div class="team__box">
 
       <div class="member">
-        <img src="./img/member-1.png" alt="member" class="member__img">
-        <span class="member__name">Dr Ricky Doe</span>
+        <a href="#"><img src="./img/member-1.png" alt="member" class="member__img"></a>
+        <a href=""><span class="member__name">Dr Ricky Doe</span></a>
         <span class="member__rank">Assistant Surgeon</span>
         <div class="member__social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-google-plus-g"></i>
-          <i class="fab fa-google-wallet"></i>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-google-wallet"></i></a>
         </div>
       </div>
       <div class="member">
-        <img src="./img/member-2.png" alt="member" class="member__img">
-        <span class="member__name">Dr Ricky Doe</span>
+        <a href="#"><img src="./img/member-2.png" alt="member" class="member__img"></a>
+        <a href=""><span class="member__name">Dr Ricky Doe</span></a>
         <span class="member__rank">Assistant Surgeon</span>
         <div class="member__social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-google-plus-g"></i>
-          <i class="fab fa-google-wallet"></i>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-google-wallet"></i></a>
         </div>
       </div>
       <div class="member">
-        <img src="./img/member-3.png" alt="member" class="member__img">
-        <span class="member__name">Dr Ricky Doe</span>
+        <a href=""><img src="./img/member-3.png" alt="member" class="member__img"></a>
+        <a href=""><span class="member__name">Dr Ricky Doe</span></a>
         <span class="member__rank">Assistant Surgeon</span>
         <div class="member__social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-google-plus-g"></i>
-          <i class="fab fa-google-wallet"></i>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-google-wallet"></i></a>
         </div>
       </div>
       <div class="member">
-        <img src="./img/member-4.png" alt="member" class="member__img">
-        <span class="member__name">Dr Ricky Doe</span>
+        <a href=""><img src="./img/member-4.png" alt="member" class="member__img"></a>
+        <a href="#"><span class="member__name">Dr Ricky Doe</span></a>
         <span class="member__rank">Assistant Surgeon</span>
         <div class="member__social">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-google-plus-g"></i>
-          <i class="fab fa-google-wallet"></i>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-google-plus-g"></i></a>
+          <a href=""><i class="fab fa-google-wallet"></i></a>
         </div>
       </div>
 
@@ -448,12 +460,12 @@
 
       <div class="footer__in-touch">
         <h4>Get in Touch</h4>
-        <img src="img/footer-icon-1.png" alt="envelope">
-        <span>free@psdfreebies.com
-          free@psdfreebies.com</span>
-        <img src="./img/footer-icon-2.png" alt="phone">
-        <span>+123 456 7890<br>
-          +123 456 7890</span>
+        <a href="mailto:mailto:dr.lecter@hannibal.com?subject=ZjemCie"><img src="img/footer-icon-1.png" alt="envelope"></a>
+        <span><a href="mailto:mailto:dr.lecter@hannibal.com?subject=ZjemCie">dr.lecter@hannibal.com</a>
+          <a href="mailto:mailto:dr.lecter@hannibal.com?subject=ZjemCie">dr.lecter@hannibal.com</a></span>
+        <a href="tel:+123 4567 8900"><img src="./img/footer-icon-2.png" alt="phone"></a>
+        <span><a href="tel:+123 4567 8900">+123 456 7890</a><br>
+          <a href="tel:+123 4567 8900">+123 456 7890</a></span>
         <img src="./img/footer-icon-3.png" alt="location">
         <span>123, Main Road, New City, My Country 123456</span>
 
@@ -515,10 +527,13 @@
     </div>
 
     <div class="footer__copyrights">
-      Copyright © 2019 with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> Adrian Jędrczak.
+      Copyright © 2019 with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> <a href="https://github.com/silvervian"
+        target="_blank">Adrian
+        Jędrczak</a>
     </div>
   </footer>
 
+  <a href="#header" class="go-up"></a>
 
   <script src="./js/app.js"></script>
 </body>

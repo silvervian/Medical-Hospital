@@ -1,0 +1,43 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+.go-up {
+  display: inline-block;
+  background-color: rgb(85, 85, 85);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  @include media(small) {
+    display: none;
+  }
+
+  &::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }    
+
+  &.show {
+    opacity: .5;
+    visibility: visible;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        background-color: rgb(85, 85, 85);
+        opacity: 1;
+    }
+  }
+}

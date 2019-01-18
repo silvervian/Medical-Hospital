@@ -34,6 +34,10 @@
       padding: 0 2rem;
       margin-right: 4rem; 
       
+      @include media(small) {
+        padding: 0;
+      }
+      
       &:last-child {
         margin-bottom: 0;
       }
@@ -43,23 +47,25 @@
 
   &__in-touch {
     display: grid;
-    grid-template-columns: 8rem 20rem;
-    // grid-template-rows: repeat(3, 6rem);
-    // grid-gap: 1rem;
+    grid-template-columns: 8rem minmax(19rem, 20rem);
 
 
-    & img {
+    & img, a {
       justify-self: center;
       align-self: center;
     }
 
-    & span {
+    & a:hover {
+      color: #fff;
+    }
+    
+    & span, a {
       padding-top: 1rem; 
-      opacity: 0.51;
-      color: #ffffff;
+      color: #ffffffa2;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 2.4rem;
+
     }
   }
 
@@ -88,12 +94,15 @@
   &__link {
     position: relative;
     padding-left: 4rem; 
-    opacity: 0.51;
-    color: #ffffff;
+    color: #ffffffa2;
     font-size: 1.6rem;
     font-weight: 400;
     /* Text style for "A, bout us" */
     letter-spacing: 0.4px;
+
+    &:hover {
+      color: #ffffff;
+    }
 
     &::before {
       position: absolute;
@@ -118,6 +127,15 @@
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2.4rem;
+
+    & a {
+      color: inherit;
+      transition: .2s;
+
+      &:hover {
+        color: tint(#615555, 40%);
+      }
+    }
 
     > * {
       padding: 0 .5rem;

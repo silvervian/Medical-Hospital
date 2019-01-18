@@ -33,6 +33,12 @@
     width: 279px;
     height: 279px;
     border-radius: 50%;
+    filter: grayscale(50%);
+    transition: .2s;
+    
+    &:hover {
+      filter: grayscale(0);
+    }
   } 
   
   &__name {
@@ -40,6 +46,11 @@
     font-family: Montserrat;
     font-size: 25px;
     font-weight: 500;
+    transition: .2s;
+
+    &:hover {
+      color: shade(#6f6f6e, 30%);
+    }
   }
   
   &__rank {
@@ -52,8 +63,13 @@
   }
   
   &__social i {
+    padding: 0 1rem;
     font-size: 25px;
     color: #0087be;
+
+    &:hover {
+      color: shade(#0087be, 40%);
+    }
   }
   
 }

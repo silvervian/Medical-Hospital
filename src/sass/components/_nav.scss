@@ -22,9 +22,12 @@
     font-family: $roboto;
     font-size: 2rem;
     font-weight: 400;
-
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    
     &:hover {
-      font-weight: 700;
+      border-bottom: 2px solid #6c6c6c;
+      color: #000;
     }
   }
 }
