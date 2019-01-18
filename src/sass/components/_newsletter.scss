@@ -1,0 +1,23 @@
+.newsletter {
+  padding: 8rem 1rem;
+  background: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+
+  &__header {
+    text-align: center;
+    color: #494949;
+  }
+  
+  & > :first-child {
+    margin: 0 4rem;
+    
+    @include media(large) {
+      margin-bottom: 4rem;
+    }
+  }
+}

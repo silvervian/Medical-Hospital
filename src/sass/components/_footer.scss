@@ -1,0 +1,126 @@
+.footer {
+  background: #171717;
+  
+  &__inner {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 10rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    @include media(medium) {
+      justify-content: flex-start;
+    }
+
+    & h4 {
+      margin-bottom: 4rem;
+      grid-column: 1 / -1;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      /* Text style for "G, et in T" */
+      letter-spacing: 0.55px;
+    }
+
+    & > * {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // width: 33%;
+      padding: 0 2rem;
+      margin-right: 4rem; 
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  &__in-touch {
+    display: grid;
+    grid-template-columns: 8rem 20rem;
+    // grid-template-rows: repeat(3, 6rem);
+    // grid-gap: 1rem;
+
+
+    & img {
+      justify-self: center;
+      align-self: center;
+    }
+
+    & span {
+      padding-top: 1rem; 
+      opacity: 0.51;
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__social-icons {
+    padding-top: 2rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    
+    & .social-icons {
+      margin-left: 0;
+    }
+  }
+
+  &__nav {
+
+  }
+
+  &__menu {
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    position: relative;
+    padding-left: 4rem; 
+    opacity: 0.51;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    /* Text style for "A, bout us" */
+    letter-spacing: 0.4px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 6px;
+      left: 0;
+      width: 1rem;
+      height: 1rem;
+      background: url(../../img/arrow.png) no-repeat 50% 50%;
+    }
+  }
+
+  &__copyrights {
+    text-align: center;
+    flex-direction: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    background-color: #1a1a1a;
+    color: #615555;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    > * {
+      padding: 0 .5rem;
+    }
+  }
+}
